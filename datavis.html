@@ -4,13 +4,15 @@
         <meta name = "viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-compatible" content="ie=edge">
         <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script src="graph.js"></script>
        
 
         
         <title>Data Visualisations</title>
     </head>
 
-    <body>
+    <body onload="onLoad()"> 
         <section>
             <nav>
                 <div class = 'nav-header'>
@@ -41,6 +43,10 @@
                 <div class="L3"></div>
             </div>
         </section>
+        <section>
+            <div id="my_dataviz"></div>
+        </section>
+        
     </body>
     <script src="nav.js"></script>
 </html>
