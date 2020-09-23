@@ -3,6 +3,18 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.blogwriting{
+    text-align: justify;
+    
+}
+.blog-lists{
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    
+}
+
 .nav-header{
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -35,7 +47,7 @@ nav{
 .sammich div{
     width: 25px;
     height: 5px;
-    background-color:#edf6f9 ;
+    background-color:greenyellow ;
     margin: 5px;
 }
 
@@ -55,7 +67,7 @@ nav{
         height: 92vh;
         top: 8vh;
         transition: transform 0.5s ease-in;
-        background-color: #006d77;
+        background-color: greenyellow;
         display: flex;
         flex-direction: column;
         align-items: center;

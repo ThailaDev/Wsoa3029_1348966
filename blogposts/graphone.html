@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=edge">
+        <link rel="stylesheet" href="../stylesheet.css">
+       
+
+        
+        <title>Graph for Hand in One</title>
+    </head>
+
+    <body>
+        <section>
+            <nav>
+                <div class = 'nav-header'>
+                    <h3>CoV19 Data</h3>
+                </div>
+
+                <ul class="navigation">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../blogs.html">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="../creative.html">Page Creation</a>
+                    </li>
+                   
+                    <li>
+                        <a href="../datavis.html">Creative Vis</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sammich">
+                <div class="L1"></div>
+                <div class="L2"></div>
+                <div class="L3"></div>
+            </div>
+        </section>
+
+        <section class="blogpost">
+            <h1 class="blogheading">First Iteration of Graph</h1>
+            <article class="blogwriting">
+               <p>The graph that I decided to build with JavaScript using D3 and the covid19 Api as well as the World Bank Api is a bubble plot. I used statistics of Total Covid19 cases in countries together with statistics of total GDP of the countries per person and related those with the death rates of those countries.</p>
+               <p>To get the death rate I divided the total amount of Covid19 related deaths in the countries with the total amount of confirmed cases to get a decimal. </p>
+               <p>As one can see on the graph it seems as though countries with a higher GDP have more Covid19 related deaths but those with a lower GDP have a higher risk of infection. This data is still, however, in its early stages but if I were to also include the statistics of population density or mean ages of the population of the countries, the results would be able to tell us much more. </p>
+               <p>What did I learn through the making of this graph? I spent about 5 hours in total on the code. Theoretically it should have taken a shorter amount of time if I was more confident in my abilities with JavaScript but I am fairly new to the language. I learnt a lot about the syntax of JS through this experience and how to problem solve. Some issues that I came across was that the country list was in a different order on the World Bank API than on the Covid19 API. In order to fix that I had to check that the country codes matched before adding the GDP values as if I didn’t the wrong GDP would show for the wrong countries. This is the code I used for that: </p>
+               <P>if(cleanData[j].cc == gdpData[1][index].country.id){
+                cleanData[j].gdp = gdpData[1][index].value;
+</P>
+                <p>I am not yet sure how to add the descriptors for x and y axis through JavaScript but that would be my next step for making this graph more readable, as well as writing out the values of the increments in a more readable manner. </p>
+            </article>
+        </section>
+    </body>
+    <script src="../nav.js"></script>
+</html>
