@@ -3,6 +3,10 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    color:black;
+    background-color: paleturquoise;
+}
 .blogwriting{
     text-align: justify;
     
@@ -57,21 +61,23 @@ nav{
     }
 }
 
-@media screen and (max-width:786px){
+@media screen and (max-width:780px){
     body{overflow-x: hidden;}
     .navigation
     {
-        transform: translateX(100%);
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        transition: transform 0.5s ease-in;
+       
         background-color: greenyellow;
         display: flex;
         flex-direction: column;
         align-items: center;
+       
+        top: 8vh;
+        transition: transform 0.5s ease-in;
         width: 50%;
+        transform: translateX(100%);
+        position: absolute;
+        right: 0px;
+        height: 92vh;
 
     }
     .navigation li{
